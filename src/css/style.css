@@ -375,6 +375,89 @@ tr:hover td { background: #F0F4FA; }
 .contact-tel a { color: inherit; }
 .contact-note { font-size: .78rem; color: var(--text-sub); margin-top: 6px; }
 
+/* === Hero tagline === */
+.hero-tagline {
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: .04em;
+  opacity: 1;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+.hero-tagline-sub {
+  display: block;
+  font-size: .85em;
+  font-weight: 400;
+  opacity: .85;
+  margin-top: 6px;
+}
+
+/* === About section === */
+.about-section {
+  background: #fff;
+  padding: 56px 0 48px;
+  border-bottom: 1px solid var(--border);
+}
+.about-message {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.about-lead {
+  font-size: .88rem;
+  color: var(--text-sub);
+  letter-spacing: .08em;
+  margin-bottom: 14px;
+}
+.about-headline {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.4;
+  margin-bottom: 24px;
+  padding: 20px 0;
+  border-top: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
+}
+.about-body {
+  font-size: .96rem;
+  line-height: 2;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.about-sign {
+  font-size: .85rem;
+  color: var(--text-sub);
+  font-style: italic;
+}
+.about-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pillar {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  border-top: 4px solid var(--primary);
+  transition: box-shadow .2s, transform .2s;
+}
+.pillar:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+.pillar-icon { font-size: 2.4rem; margin-bottom: 12px; }
+.pillar-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.pillar-desc { font-size: .85rem; color: var(--text-sub); line-height: 1.7; }
+
+@media (max-width: 600px) {
+  .about-pillars { grid-template-columns: 1fr; }
+  .about-headline { font-size: 1.3rem; }
+}
+
 /* === Footer === */
 .site-footer {
   background: var(--primary-dark);
