@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>災害情報・防災設定 | ○○町会</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .os-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+    .os-tab {
+      padding: 8px 20px; border-radius: 50px; border: 2px solid var(--primary);
+      background: none; color: var(--primary); font-weight: 700; cursor: pointer;
+      font-family: inherit; font-size: .9rem; transition: .2s;
+    }
+    .os-tab.active { background: var(--primary); color: #fff; }
+    .os-content { display: none; }
+    .os-content.active { display: block; }
+    .kv-row { display: flex; gap: 10px; margin-bottom: 4px; font-size: .9rem; }
+    .kv-key { color: var(--text-sub); min-width: 5em; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="site-logo">○○町会</a>
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="circular.html">回覧板</a></li>
+        <li><a href="disaster-info.html">災害情報</a></li>
+        <li><a href="disaster-action.html">災害時の行動</a></li>
+        <li><a href="events.html">町会行事</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero hero-info">
+    <div class="container">
+      <h1>🌧️ 災害情報・防災設定</h1>
+      <p>「いざ」というときのために、今できる準備をしましょう。<br>防災サイトの紹介とスマートフォンの設定方法をご案内します。</p>
+    </div>
+  </section>
+
+  <!-- リアルタイム確認サイト -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">🔴</span>リアルタイム危険度を確認する</h2>
+
+      <!-- キキクル -->
+      <div class="card" style="margin-bottom:20px;">
+        <div style="display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap;">
+          <div style="flex:1; min-width:240px;">
+            <div class="card-title" style="font-size:1.2rem;">🌊 キキクル（気象庁 危険度分布）</div>
+            <p style="margin-bottom:12px; font-size:.92rem;">大雨・土砂災害・洪水の危険度をリアルタイムで地図上に表示します。<strong>色が濃いほど危険度が高く</strong>、「危険」「非常に危険」になったら避難を検討してください。</p>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px; font-size:.82rem;">
+              <span style="background:#C8E6C9; padding:4px 10px; border-radius:4px;">● 注意</span>
+              <span style="background:#FFF176; padding:4px 10px; border-radius:4px;">● 警戒</span>
+              <span style="background:#FF8A65; padding:4px 10px; border-radius:4px; color:#fff;">● 危険</span>
+              <span style="background:#B71C1C; padding:4px 10px; border-radius:4px; color:#fff;">● 非常に危険</span>
+            </div>
+            <a href="https://www.jma.go.jp/bosai/risk/" target="_blank" rel="noopener" class="btn btn-primary">キキクルを開く →</a>
+          </div>
+          <div style="background:var(--bg); border-radius:8px; padding:16px; min-width:200px; font-size:.85rem;">
+            <strong>📋 表示できる情報</strong>
+            <ul style="list-style:disc; padding-left:16px; margin-top:8px; color:var(--text-sub); display:flex; flex-direction:column; gap:4px;">
+              <li>土砂災害の危険度</li>
+              <li>浸水（内水）の危険度</li>
+              <li>洪水（河川）の危険度</li>
+              <li>記録的短時間大雨情報</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 自治体 -->
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">🗺️ ○○市 ハザードマップ</div>
+          <p style="font-size:.88rem; color:var(--text-sub); margin-bottom:14px;">洪水・土砂・高潮などのリスクエリアを確認できます。自宅がどのゾーンか必ず確認してください。</p>
+          <div class="kv-row"><span class="kv-key">掲載内容</span><span>各種ハザードマップ・避難所一覧</span></div>
+          <div class="kv-row"><span class="kv-key">更新頻度</span><span>随時（市が更新）</span></div>
+          <div style="margin-top:16px;">
+            <a href="https://www.city.xxxx.xx.jp/bosai/hazardmap" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem; padding:8px 18px;">開く →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">📡 ○○市 防災・緊急情報</div>
+          <p style="font-size:.88rem; color:var(--text-sub); margin-bottom:14px;">避難情報・避難指示・気象警報の発令状況をリアルタイムで確認できます。</p>
+          <div class="kv-row"><span class="kv-key">掲載内容</span><span>避難勧告・警報・河川水位</span></div>
+          <div class="kv-row"><span class="kv-key">更新頻度</span><span>随時（緊急時）</span></div>
+          <div style="margin-top:16px;">
+            <a href="https://www.city.xxxx.xx.jp/bosai/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem; padding:8px 18px;">開く →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">🌀 気象庁 天気予報・警報</div>
+          <p style="font-size:.88rem; color:var(--text-sub); margin-bottom:14px;">大雨・暴風・洪水などの気象警報・注意報を公式に確認できます。</p>
+          <div class="kv-row"><span class="kv-key">掲載内容</span><span>各種警報・注意報・台風情報</span></div>
+          <div class="kv-row"><span class="kv-key">更新頻度</span><span>随時</span></div>
+          <div style="margin-top:16px;">
+            <a href="https://www.jma.go.jp/jma/index.html" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem; padding:8px 18px;">開く →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推奨アプリ -->
+  <section class="section" style="background:#fff;">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📱</span>推奨アプリ</h2>
+      <div class="app-grid">
+        <div class="app-card">
+          <div class="app-icon">🔔</div>
+          <div>
+            <div class="app-name">Yahoo! 防災速報</div>
+            <div class="app-desc">避難情報・気象警報をプッシュ通知。地域設定で自宅エリアの情報を受信。</div>
+            <div style="margin-top:8px;"><span class="chip">iOS</span><span class="chip">Android</span></div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">📺</div>
+          <div>
+            <div class="app-name">NHK ニュース・防災</div>
+            <div class="app-desc">速報ニュース・ハザードマップ・避難情報を一元確認。</div>
+            <div style="margin-top:8px;"><span class="chip">iOS</span><span class="chip">Android</span></div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">☁️</div>
+          <div>
+            <div class="app-name">雨雲レーダー（気象庁）</div>
+            <div class="app-desc">ブラウザで利用可能。10分ごとに更新される雨雲の動きを確認。</div>
+            <div style="margin-top:8px;"><span class="chip">ブラウザ</span></div>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🏙️</div>
+          <div>
+            <div class="app-name">○○市 防災アプリ（ダミー）</div>
+            <div class="app-desc">市の避難情報・ハザードマップ・緊急連絡先を1つのアプリで確認。</div>
+            <div style="margin-top:8px;"><span class="chip">iOS</span><span class="chip">Android</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- スマホ防災設定 -->
+  <section class="section" id="smartphone">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">⚙️</span>スマートフォンの防災設定</h2>
+
+      <div class="alert alert-warning">
+        <span class="alert-icon">⚠️</span>
+        <div><strong>緊急速報メール（エリアメール）</strong>が届かない設定になっていると、避難情報を見逃す場合があります。今すぐ確認しましょう。</div>
+      </div>
+
+      <h3 style="font-size:1.05rem; font-weight:700; color:var(--primary); margin-bottom:16px;">① 緊急速報メールを有効にする</h3>
+
+      <div class="os-tabs">
+        <button class="os-tab active" data-tab="ios"> iPhone (iOS)</button>
+        <button class="os-tab" data-tab="android"> Android</button>
+      </div>
+
+      <div id="ios" class="os-content active">
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <div class="step-title">「設定」アプリを開く</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">ホーム画面またはアプリ一覧から「設定（歯車アイコン）」をタップします。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <div class="step-title">「通知」をタップ</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">設定一覧の中から「通知」を選んでタップします。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <div class="step-title">一番下の「緊急速報」をオンにする</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">画面を一番下までスクロールし、「緊急速報」のスイッチを<strong>オン（緑色）</strong>にします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="android" class="os-content">
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <div class="step-title">「設定」アプリを開く</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">ホーム画面またはアプリ一覧から「設定」をタップします。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <div class="step-title">「アプリと通知」→「詳細設定」をタップ</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">機種によって「通知」→「詳細設定」の順の場合もあります。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <div class="step-title">「ワイヤレス緊急速報」をタップ</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">「緊急速報メール」のスイッチを<strong>オン</strong>にします。</p>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-info mt-16">
+          <span class="alert-icon">ℹ️</span>
+          <div>機種・OSバージョンにより手順が異なります。「機種名 緊急速報 設定」で検索するとメーカー公式の手順が確認できます。</div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <h3 style="font-size:1.05rem; font-weight:700; color:var(--primary); margin-bottom:16px;">② Yahoo! 防災速報 地域設定</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">Yahoo! 防災速報アプリをインストール</div>
+            <p style="font-size:.88rem; color:var(--text-sub);">App Store または Google Play で「Yahoo! 防災速報」を検索してインストール。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">「マイ地域を追加」→ 自宅の住所を入力</div>
+            <p style="font-size:.88rem; color:var(--text-sub);">アプリ起動後、下部メニューの「地域」から「マイ地域を追加」を選び自宅の住所を登録します。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">「通知設定」から必要な通知をオンにする</div>
+            <p style="font-size:.88rem; color:var(--text-sub);">「避難勧告・指示」「大雨警報」「土砂災害警戒情報」は必ずオンにしてください。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav">
+      <a href="circular.html">回覧板</a>
+      <a href="disaster-info.html">災害情報</a>
+      <a href="disaster-action.html">災害時の行動</a>
+      <a href="events.html">町会行事</a>
+    </nav>
+    <p>○○町会 &copy; 2026 &nbsp;|&nbsp; 〒XXX-XXXX ○○市△△区□□X-X-X</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.querySelectorAll('.os-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.os-tab').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.os-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>災害時の行動 | ○○町会</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="site-logo">○○町会</a>
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="circular.html">回覧板</a></li>
+        <li><a href="disaster-info.html">災害情報</a></li>
+        <li><a href="disaster-action.html">災害時の行動</a></li>
+        <li><a href="events.html">町会行事</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero hero-emergency">
+    <div class="container">
+      <h1>🚨 災害時の行動</h1>
+      <p>災害が発生したとき・発生しそうなとき、どう動けばよいかを段階別にまとめています。<br>焦らず、このページを確認しながら行動してください。</p>
+    </div>
+  </section>
+
+  <!-- 警戒レベル -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📊</span>警戒レベルと取るべき行動</h2>
+
+      <div class="alert alert-danger" style="margin-bottom:24px;">
+        <span class="alert-icon">🔴</span>
+        <div><strong>レベル3以上が発令されたら、迷わず避難を開始してください。</strong>「まだ大丈夫」と思っているうちに逃げ遅れるケースが多くあります。</div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="level-table">
+          <thead>
+            <tr>
+              <th style="width:80px;">レベル</th>
+              <th>発令の目安</th>
+              <th>あなたがすること</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="lv1">1</td>
+              <td>早期注意情報</td>
+              <td>最新情報に注意する・ハザードマップを再確認する</td>
+            </tr>
+            <tr>
+              <td class="lv2">2</td>
+              <td>大雨・洪水注意報</td>
+              <td>避難に備えて準備を始める・非常持ち出し袋を確認する</td>
+            </tr>
+            <tr>
+              <td class="lv3">3</td>
+              <td>高齢者等避難（旧：避難準備）</td>
+              <td><strong>高齢者・障害者・子ども連れは避難を開始する</strong></td>
+            </tr>
+            <tr>
+              <td class="lv4">4</td>
+              <td>避難指示</td>
+              <td><strong>全員、すぐに避難場所へ移動する</strong></td>
+            </tr>
+            <tr>
+              <td class="lv5">5</td>
+              <td>緊急安全確保</td>
+              <td><strong>命を守る最善の行動をとる（すでに危険な状況）</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="font-size:.82rem; color:var(--text-sub); margin-top:10px;">※ 警戒レベルは内閣府・気象庁・自治体が発令します。○○市の公式ページで最新情報を確認してください。</p>
+    </div>
+  </section>
+
+  <!-- 避難所 -->
+  <section class="section" style="background:#fff;">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">🏫</span>避難所一覧</h2>
+
+      <div class="alert alert-warning" style="margin-bottom:24px;">
+        <span class="alert-icon">⚠️</span>
+        <div>災害の種類によって開設される避難所が異なります。必ず<strong>○○市の防災情報ページ</strong>で最新情報を確認してください。</div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>避難所名</th>
+              <th>住所（ダミー）</th>
+              <th>収容人数</th>
+              <th>地図</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>○○小学校</strong><br><span style="font-size:.8rem; color:var(--text-sub);">一次避難所・指定緊急避難場所</span></td>
+              <td>○○市△△区□□1-1-1</td>
+              <td>約500名</td>
+              <td><a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.78rem; padding:4px 12px;">地図 →</a></td>
+            </tr>
+            <tr>
+              <td><strong>△△公民館</strong><br><span style="font-size:.8rem; color:var(--text-sub);">福祉避難所（要事前申請）</span></td>
+              <td>○○市△△区□□2-2-2</td>
+              <td>約150名</td>
+              <td><a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.78rem; padding:4px 12px;">地図 →</a></td>
+            </tr>
+            <tr>
+              <td><strong>□□市民センター</strong><br><span style="font-size:.8rem; color:var(--text-sub);">一次避難所・ペット同伴エリアあり</span></td>
+              <td>○○市△△区□□3-3-3</td>
+              <td>約300名</td>
+              <td><a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.78rem; padding:4px 12px;">地図 →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 持ち出し袋チェックリスト -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">🎒</span>非常持ち出し袋チェックリスト</h2>
+      <p style="margin-bottom:20px; font-size:.92rem; color:var(--text-sub);">今すぐ準備できているか確認してください。</p>
+      <div style="max-width:600px;">
+        <div class="checklist">
+          <div class="checklist-item">非常用食料・飲料水（最低3日分）</div>
+          <div class="checklist-item">携帯電話・充電器・モバイルバッテリー</div>
+          <div class="checklist-item">常備薬・お薬手帳のコピー</div>
+          <div class="checklist-item">マイナンバーカードまたは保険証のコピー</div>
+          <div class="checklist-item">現金（1万円程度、小銭含む）</div>
+          <div class="checklist-item">雨具・タオル・着替え（2〜3日分）</div>
+          <div class="checklist-item">懐中電灯・予備電池</div>
+          <div class="checklist-item">携帯ラジオ</div>
+          <div class="checklist-item">救急セット（絆創膏・消毒液など）</div>
+          <div class="checklist-item">家族の連絡先メモ（スマホが使えない場合に備えて）</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 緊急連絡先 -->
+  <section class="section" style="background:#fff;">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📞</span>緊急連絡先</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-name">警察（緊急）</div>
+          <div class="contact-tel"><a href="tel:110">110</a></div>
+          <div class="contact-note">事件・事故・緊急時</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">消防・救急（緊急）</div>
+          <div class="contact-tel"><a href="tel:119">119</a></div>
+          <div class="contact-note">火災・救急・救助</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">災害用伝言ダイヤル</div>
+          <div class="contact-tel"><a href="tel:171">171</a></div>
+          <div class="contact-note">大規模災害時に開設</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">○○市 危機管理課</div>
+          <div class="contact-tel"><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a></div>
+          <div class="contact-note">平日 8:30〜17:15</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">○○市 夜間・休日窓口</div>
+          <div class="contact-tel"><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a></div>
+          <div class="contact-note">夜間・土日祝</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">町会長（緊急時）</div>
+          <div class="contact-tel"><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a></div>
+          <div class="contact-note">災害時のみ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 171の使い方 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📟</span>災害用伝言ダイヤル（171）の使い方</h2>
+      <div style="max-width:600px;">
+        <div class="alert alert-info" style="margin-bottom:20px;">
+          <span class="alert-icon">ℹ️</span>
+          <div>大規模災害発生時に NTT が開設します。安否情報を30秒以内で録音・再生できます。</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <div class="step-title">171 に電話する</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <div class="step-title">「1」→ 録音　／　「2」→ 再生</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">「自分の安否を伝えたい」→ 1（録音）、「相手の安否を確認したい」→ 2（再生）</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <div class="step-title">自宅の電話番号（市外局番から）を入力</div>
+              <p style="font-size:.88rem; color:var(--text-sub);">家族で「どの電話番号を使うか」を事前に決めておきましょう。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <div class="step-title">メッセージを録音 または 再生する</div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-warning mt-16">
+          <span class="alert-icon">💡</span>
+          <div><strong>事前に体験できます！</strong> 毎月1日・15日・正月三が日に体験利用できます。ぜひ家族で練習しておきましょう。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav">
+      <a href="circular.html">回覧板</a>
+      <a href="disaster-info.html">災害情報</a>
+      <a href="disaster-action.html">災害時の行動</a>
+      <a href="events.html">町会行事</a>
+    </nav>
+    <p>○○町会 &copy; 2026 &nbsp;|&nbsp; 〒XXX-XXXX ○○市△△区□□X-X-X</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

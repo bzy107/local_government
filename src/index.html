@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>○○町会 公式ホームページ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="site-logo">○○町会</a>
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="circular.html">回覧板</a></li>
+        <li><a href="disaster-info.html">災害情報</a></li>
+        <li><a href="disaster-action.html">災害時の行動</a></li>
+        <li><a href="events.html">町会行事</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-sub">○○市 △△区</p>
+      <h1>○○町会<br>公式ホームページ</h1>
+      <p>つながろう、備えよう、○○の街。<br>防災情報・回覧板・町会行事をお届けします。</p>
+      <div class="hero-btns">
+        <a href="disaster-action.html" class="btn btn-white">🚨 災害時の行動を確認</a>
+        <a href="circular.html" class="btn btn-outline">📄 回覧板を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- お知らせ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📢</span>お知らせ</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">2026/06/20</span>
+          <span class="news-tag tag-circular">回覧</span>
+          <div class="news-body"><a href="circular.html">6月号 町会だよりを掲載しました</a></div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026/06/15</span>
+          <span class="news-tag tag-event">行事</span>
+          <div class="news-body"><a href="events.html">7月の夏祭りについてのご案内</a></div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026/06/01</span>
+          <span class="news-tag tag-disaster">防災</span>
+          <div class="news-body"><a href="disaster-info.html">大雨警戒シーズン到来・キキクルの活用方法</a></div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026/05/25</span>
+          <span class="news-tag tag-circular">回覧</span>
+          <div class="news-body"><a href="circular.html">5月号 防災訓練のご案内を掲載しました</a></div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026/04/20</span>
+          <span class="news-tag tag-info">町会</span>
+          <div class="news-body"><a href="circular.html">2026年度 総会資料を掲載しました</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- クイックリンク -->
+  <section class="section" style="background: var(--primary); padding: 48px 0;">
+    <div class="container">
+      <h2 class="section-title" style="color:#fff; border-color: rgba(255,255,255,.5);">
+        <span class="icon">🔗</span>ページ案内
+      </h2>
+      <div class="card-grid">
+        <a href="circular.html" class="card-link">
+          <div class="card-icon">📄</div>
+          <div class="card-label">回覧板</div>
+          <div class="card-desc">町会からのお知らせ・<br>配布物を掲載</div>
+        </a>
+        <a href="disaster-info.html" class="card-link">
+          <div class="card-icon">🌧️</div>
+          <div class="card-label">災害情報・防災設定</div>
+          <div class="card-desc">キキクル・ハザードマップ・<br>スマホ設定ガイド</div>
+        </a>
+        <a href="disaster-action.html" class="card-link">
+          <div class="card-icon">🚨</div>
+          <div class="card-label">災害時の行動</div>
+          <div class="card-desc">警戒レベル別の行動・<br>避難所・緊急連絡先</div>
+        </a>
+        <a href="events.html" class="card-link">
+          <div class="card-icon">🎉</div>
+          <div class="card-label">町会行事</div>
+          <div class="card-desc">年間行事カレンダー・<br>直近の行事案内</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 防災インフォメーション -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">🛡️</span>今すぐ確認！防災情報</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">🌊 キキクル（気象庁）</div>
+          <p style="font-size:.88rem; color:var(--text-sub); margin-bottom:14px;">大雨・土砂・洪水の危険度をリアルタイムで確認できます。</p>
+          <a href="https://www.jma.go.jp/bosai/risk/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem; padding:8px 18px;">開く →</a>
+        </div>
+        <div class="card">
+          <div class="card-title">🗺️ ○○市 ハザードマップ</div>
+          <p style="font-size:.88rem; color:var(--text-sub); margin-bottom:14px;">自宅周辺のリスクエリアを事前に確認しておきましょう。</p>
+          <a href="disaster-info.html" class="btn btn-primary" style="font-size:.85rem; padding:8px 18px;">詳しく見る →</a>
+        </div>
+        <div class="card">
+          <div class="card-title">📱 スマホの防災設定</div>
+          <p style="font-size:.88rem; color:var(--text-sub); margin-bottom:14px;">緊急速報メールの確認・推奨アプリの導入方法を解説。</p>
+          <a href="disaster-info.html#smartphone" class="btn btn-primary" style="font-size:.85rem; padding:8px 18px;">設定を確認 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav">
+      <a href="circular.html">回覧板</a>
+      <a href="disaster-info.html">災害情報</a>
+      <a href="disaster-action.html">災害時の行動</a>
+      <a href="events.html">町会行事</a>
+    </nav>
+    <p>○○町会 &copy; 2026 &nbsp;|&nbsp; 〒XXX-XXXX ○○市△△区□□X-X-X &nbsp;|&nbsp; 町会長: ○○ ○○</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

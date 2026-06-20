@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>町会行事 | ○○町会</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="site-logo">○○町会</a>
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="circular.html">回覧板</a></li>
+        <li><a href="disaster-info.html">災害情報</a></li>
+        <li><a href="disaster-action.html">災害時の行動</a></li>
+        <li><a href="events.html">町会行事</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero hero-events">
+    <div class="container">
+      <h1>🎉 町会行事</h1>
+      <p>○○町会の年間行事をご案内します。ぜひご参加ください。<br>詳細が決まり次第、随時更新します。</p>
+    </div>
+  </section>
+
+  <!-- 直近の行事 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📅</span>直近の行事</h2>
+
+      <div style="display:flex; flex-direction:column; gap:16px;">
+
+        <!-- 夏祭り -->
+        <div class="event-card">
+          <div class="event-accent"></div>
+          <div class="event-body">
+            <div class="event-date">2026年7月26日（土）</div>
+            <div class="event-title">🏮 夏祭り</div>
+            <div class="event-meta">
+              <span><span class="label">時間</span><span class="value">16:00〜20:00（雨天中止）</span></span>
+              <span><span class="label">場所</span><span class="value">○○公園（○○市△△区□□2丁目）</span></span>
+              <span><span class="label">内容</span><span class="value">盆踊り・屋台・スイカ割り</span></span>
+              <span><span class="label">持ち物</span><span class="value">特になし（浴衣歓迎）</span></span>
+              <span><span class="label">問い合わせ</span><span class="value">行事係 XXX-XXXX-XXXX</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 防災訓練 -->
+        <div class="event-card" style="grid-template-columns: 6px 1fr;">
+          <div class="event-accent" style="background: var(--accent);"></div>
+          <div class="event-body">
+            <div class="event-date">2026年9月6日（日）</div>
+            <div class="event-title" style="color:var(--accent);">🚒 防災訓練</div>
+            <div class="event-meta">
+              <span><span class="label">時間</span><span class="value">9:00〜11:30</span></span>
+              <span><span class="label">場所</span><span class="value">○○小学校 校庭</span></span>
+              <span><span class="label">内容</span><span class="value">避難訓練・消火器体験・救急救命講習</span></span>
+              <span><span class="label">持ち物</span><span class="value">動きやすい服装・水分・帽子</span></span>
+              <span><span class="label">問い合わせ</span><span class="value">防災委員会 XXX-XXXX-XXXX</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 敬老お祝い会 -->
+        <div class="event-card">
+          <div class="event-accent" style="background: #388E3C;"></div>
+          <div class="event-body">
+            <div class="event-date">2026年10月（日程調整中）</div>
+            <div class="event-title" style="color:#2E7D32;">🎖️ 敬老お祝い会</div>
+            <div class="event-meta">
+              <span><span class="label">場所</span><span class="value">△△公民館 大ホール</span></span>
+              <span><span class="label">内容</span><span class="value">長寿のお祝い・演芸・お食事</span></span>
+              <span><span class="label">対象</span><span class="value">満75歳以上の町会員</span></span>
+              <span><span class="label">問い合わせ</span><span class="value">福祉委員 XXX-XXXX-XXXX</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 清掃活動 -->
+        <div class="event-card">
+          <div class="event-accent" style="background: #0288D1;"></div>
+          <div class="event-body">
+            <div class="event-date">2026年11月（日程未定）</div>
+            <div class="event-title" style="color:#01579B;">🧹 清掃活動（町内一斉）</div>
+            <div class="event-meta">
+              <span><span class="label">時間</span><span class="value">8:00〜9:30</span></span>
+              <span><span class="label">内容</span><span class="value">町内各所のゴミ拾い・側溝清掃</span></span>
+              <span><span class="label">持ち物</span><span class="value">軍手・ゴミ袋（支給あり）</span></span>
+              <span><span class="label">問い合わせ</span><span class="value">環境委員 XXX-XXXX-XXXX</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 年間行事カレンダー -->
+  <section class="section" style="background:#fff;">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📆</span>年間行事カレンダー</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:60px;">月</th>
+              <th>行事</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="text-align:center; font-weight:700;">4月</td><td>総会・新入会員歓迎会</td><td>場所：△△公民館</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">5月</td><td>清掃活動（町内一斉）</td><td>雨天翌週に順延</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">6月</td><td>—</td><td></td></tr>
+            <tr style="background:#FFF8E1;"><td style="text-align:center; font-weight:700;">7月</td><td>🏮 夏祭り</td><td>○○公園・雨天中止</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">8月</td><td>お盆迎え火・送り火</td><td>町内各世帯</td></tr>
+            <tr style="background:#FBE9E7;"><td style="text-align:center; font-weight:700;">9月</td><td>🚒 防災訓練</td><td>○○小学校</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">10月</td><td>🎖️ 敬老お祝い会</td><td>75歳以上対象</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">11月</td><td>清掃活動（町内一斉）</td><td>雨天翌週に順延</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">12月</td><td>歳末警戒・夜回り</td><td>防犯委員会主催</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">1月</td><td>新年会・どんど焼き</td><td>○○神社境内</td></tr>
+            <tr><td style="text-align:center; font-weight:700;">2月</td><td>—</td><td></td></tr>
+            <tr><td style="text-align:center; font-weight:700;">3月</td><td>会計報告・役員引継ぎ</td><td>場所：△△公民館</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.82rem; color:var(--text-sub); margin-top:10px;">※ 日程は変更になる場合があります。最新情報は回覧板またはお知らせをご確認ください。</p>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">📬</span>行事に関するお問い合わせ</h2>
+      <div style="max-width:480px;">
+        <div class="card">
+          <div class="card-title">○○町会 事務局</div>
+          <div style="display:flex; flex-direction:column; gap:10px; font-size:.92rem;">
+            <div class="kv-row" style="display:flex; gap:12px;"><span style="color:var(--text-sub); min-width:5em;">町会長</span><span>○○ ○○</span></div>
+            <div class="kv-row" style="display:flex; gap:12px;"><span style="color:var(--text-sub); min-width:5em;">電話</span><span><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a>（平日 9:00〜17:00）</span></div>
+            <div class="kv-row" style="display:flex; gap:12px;"><span style="color:var(--text-sub); min-width:5em;">メール</span><span><a href="mailto:xxxx@example.com">xxxx@example.com</a></span></div>
+            <div class="kv-row" style="display:flex; gap:12px;"><span style="color:var(--text-sub); min-width:5em;">住所</span><span>〒XXX-XXXX ○○市△△区□□X-X-X</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="footer-nav">
+      <a href="circular.html">回覧板</a>
+      <a href="disaster-info.html">災害情報</a>
+      <a href="disaster-action.html">災害時の行動</a>
+      <a href="events.html">町会行事</a>
+    </nav>
+    <p>○○町会 &copy; 2026 &nbsp;|&nbsp; 〒XXX-XXXX ○○市△△区□□X-X-X</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
