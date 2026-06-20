@@ -451,7 +451,26 @@ tr:hover td { background: #F0F4FA; }
   color: var(--primary);
   margin-bottom: 8px;
 }
-.pillar-desc { font-size: .85rem; color: var(--text-sub); line-height: 1.7; }
+.pillar-desc { font-size: .85rem; color: var(--text-sub); line-height: 1.7; flex: 1; }
+.pillar-link {
+  margin-top: 14px;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: .03em;
+}
+a.pillar { text-decoration: none; display: flex; flex-direction: column; }
+a.pillar:hover { text-decoration: none; }
+a.pillar:hover .pillar-link { text-decoration: underline; }
+.about-pillars-lead {
+  text-align: center;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--text-sub);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
 
 @media (max-width: 600px) {
   .about-pillars { grid-template-columns: 1fr; }
