@@ -392,6 +392,22 @@ tr:hover td { background: #F0F4FA; }
   margin-top: 6px;
 }
 
+/* === Intro section === */
+.intro-section {
+  background: var(--bg);
+  padding: 56px 0 48px;
+  border-bottom: 1px solid var(--border);
+}
+.intro-body {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: .96rem;
+  line-height: 2;
+  color: var(--text);
+}
+
 /* === About section === */
 .about-section {
   background: #fff;
