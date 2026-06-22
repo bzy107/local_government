@@ -532,6 +532,23 @@ a.pillar:hover .pillar-link { text-decoration: underline; }
 .page-hero h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
 .page-hero p { opacity: .85; font-size: .95rem; }
 
+/* === Phase cards (disaster action) === */
+.phase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.phase-card { background: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.phase-label { padding: 14px 20px; font-weight: 700; font-size: .92rem; color: #fff; text-align: center; letter-spacing: .03em; }
+.phase-label.phase-before { background: #1565C0; }
+.phase-label.phase-during { background: #C62828; }
+.phase-label.phase-after  { background: #2E7D32; }
+.phase-body { padding: 20px 22px; }
+.phase-body ul { padding-left: 1.4em; list-style: disc; }
+.phase-body li { margin-bottom: 10px; font-size: .88rem; line-height: 1.65; }
+
+/* === Safety confirm cards === */
+.confirm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.confirm-card { background: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; border-top: 4px solid var(--primary); }
+.confirm-card-title { font-weight: 700; color: var(--primary); margin-bottom: 10px; font-size: .98rem; }
+.confirm-card-body { font-size: .88rem; color: var(--text-sub); line-height: 1.75; }
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .menu-toggle { display: block; }
@@ -552,6 +569,7 @@ a.pillar:hover .pillar-link { text-decoration: underline; }
   .card-grid { grid-template-columns: 1fr; }
   .news-item { flex-direction: column; gap: 6px; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
+  .phase-grid { grid-template-columns: 1fr; }
   table { font-size: .82rem; }
   th, td { padding: 10px 12px; }
 }
