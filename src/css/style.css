@@ -543,6 +543,24 @@ a.pillar:hover .pillar-link { text-decoration: underline; }
 .phase-body ul { padding-left: 1.4em; list-style: disc; }
 .phase-body li { margin-bottom: 10px; font-size: .88rem; line-height: 1.65; }
 
+/* === Disaster type sections === */
+.disaster-type { margin-bottom: 48px; }
+.disaster-type:last-child { margin-bottom: 0; }
+.disaster-type-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  border-radius: var(--radius);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.disaster-flood { background: linear-gradient(135deg, #1565C0, #0D47A1); }
+.disaster-quake { background: linear-gradient(135deg, #BF360C, #7F2700); }
+.disaster-fire  { background: linear-gradient(135deg, #B71C1C, #7F0000); }
+
 /* === Safety confirm cards === */
 .confirm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
 .confirm-card { background: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; border-top: 4px solid var(--primary); }
