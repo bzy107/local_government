@@ -16,12 +16,12 @@
   --radius:         10px;
   --nav-h:          64px;
 
-  /* 警戒レベル */
-  --lv1: #81C784;
-  --lv2: #FFF176;
-  --lv3: #FFB300;
-  --lv4: #E53935;
-  --lv5: #4A148C;
+  /* 警戒レベル（気象庁キキクル公式配色） */
+  --lv1: #FFFFFF;
+  --lv2: #FFFF00;
+  --lv3: #FF0000;
+  --lv4: #9C27B0;
+  --lv5: #000000;
 }
 
 /* === Reset / Base === */
@@ -254,8 +254,8 @@ tr:hover td { background: #F0F4FA; }
 
 /* === Warning Levels === */
 .level-table td:first-child { font-weight: 700; text-align: center; }
-.lv1 { background: var(--lv1); color: #1B5E20; }
-.lv2 { background: var(--lv2); color: #5D4037; }
+.lv1 { background: var(--lv1); color: #212121; border: 1px solid #BDBDBD; }
+.lv2 { background: var(--lv2); color: #212121; }
 .lv3 { background: var(--lv3); color: #fff; }
 .lv4 { background: var(--lv4); color: #fff; }
 .lv5 { background: var(--lv5); color: #fff; }
