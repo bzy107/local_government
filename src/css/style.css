@@ -567,8 +567,145 @@ a.pillar:hover .pillar-link { text-decoration: underline; }
 .confirm-card-title { font-weight: 700; color: var(--primary); margin-bottom: 10px; font-size: .98rem; }
 .confirm-card-body { font-size: .88rem; color: var(--text-sub); line-height: 1.75; }
 
+/* === Officer Action Page === */
+.role-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.role-chief   { background: #1B3A5C; }
+.role-vice    { background: #2A5280; }
+.role-bousai  { background: #BF360C; }
+.role-hanchou { background: #2E7D32; }
+.role-all     { background: #E65100; }
+
+.officer-phase {
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 36px;
+  box-shadow: var(--shadow);
+}
+.officer-phase-header {
+  padding: 20px 28px;
+  color: #fff;
+}
+.officer-phase-label {
+  font-size: .78rem;
+  font-weight: 700;
+  opacity: .8;
+  letter-spacing: .1em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.officer-phase-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.officer-phase-trigger {
+  font-size: .85rem;
+  opacity: .92;
+  background: rgba(255,255,255,.15);
+  padding: 6px 14px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.officer-phase-body {
+  padding: 28px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  gap: 18px;
+}
+.officer-card {
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 18px 20px;
+  border-left: 4px solid var(--primary);
+}
+.officer-card.chief   { border-left-color: #1B3A5C; }
+.officer-card.vice    { border-left-color: #2A5280; }
+.officer-card.bousai  { border-left-color: #C62828; }
+.officer-card.hanchou { border-left-color: #2E7D32; }
+.officer-card.all     { border-left-color: #E65100; }
+.officer-card ul { list-style: disc; padding-left: 1.2em; margin-top: 10px; }
+.officer-card li { font-size: .87rem; line-height: 1.65; margin-bottom: 8px; color: var(--text); }
+.officer-card-meta {
+  font-size: .79rem;
+  color: var(--text-sub);
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.officer-card-meta span { display: flex; gap: 6px; align-items: flex-start; }
+.meta-label { font-weight: 700; color: var(--primary); flex-shrink: 0; }
+
+/* Phase header colors */
+.ph-peacetime { background: linear-gradient(135deg, #37474F, #546E7A); }
+.ph-lv12      { background: linear-gradient(135deg, #E65100, #FF8A65); }
+.ph-lv3       { background: linear-gradient(135deg, #B71C1C, #C62828); }
+.ph-lv4       { background: linear-gradient(135deg, #4A148C, #6A1B9A); }
+.ph-lv5       { background: linear-gradient(135deg, #212121, #424242); }
+.ph-recovery  { background: linear-gradient(135deg, #1B5E20, #2E7D32); }
+
+.hero-officer {
+  background: linear-gradient(135deg, #1B3A5C 0%, #2A5280 100%);
+}
+
+.role-def-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.role-def-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 20px;
+}
+.role-def-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.role-def-sub {
+  font-size: .8rem;
+  color: var(--text-sub);
+  margin-bottom: 10px;
+}
+.role-def-desc {
+  font-size: .86rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.flow-arrow { color: var(--text-sub); font-size: 1.1rem; }
+
 /* === Responsive === */
 @media (max-width: 768px) {
+  .officer-phase-body { grid-template-columns: 1fr; }
+  .officer-phase-header { padding: 18px 20px; }
+  .officer-phase-body { padding: 20px; }
+  .role-def-grid { grid-template-columns: 1fr 1fr; }
+}
   .menu-toggle { display: block; }
   .site-nav {
     display: none;
