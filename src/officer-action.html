@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>役員 災害対応マニュアル | ○○町会</title>
+  <title>役員会 発足・運営マニュアル | ○○町会</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
@@ -28,534 +28,172 @@
 <main>
   <section class="page-hero hero-officer">
     <div class="container">
-      <h1>🏛️ 役員 災害対応マニュアル</h1>
-      <p>「いつ・どこで・誰が・何をするか」を段階別に整理した、町会役員向けの行動指針です。<br>
-         平時から熟読し、いざというときに迷わず動けるよう備えてください。</p>
+      <h1>🏛️ 役員会 発足・運営マニュアル</h1>
+      <p>役員会をいつ招集するか・安否確認フォームをいつ配信するかの判断基準をまとめています。<br>
+         全役員で事前に共有し、いざというときに迷わず動けるよう備えてください。</p>
       <p style="margin-top:12px;">
         <a href="disaster-action.html" style="color:rgba(255,255,255,.8); font-size:.88rem;">← 災害時の行動（住民向け）に戻る</a>
       </p>
     </div>
   </section>
 
-  <!-- 役割分担 -->
+  <!-- 役員会の招集条件 -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title"><span class="icon">👤</span>役員の役割分担</h2>
-      <p style="margin-bottom:28px; font-size:.94rem; color:var(--text-sub);">
-        災害時は各役員が担当領域を分担することで、迅速かつ漏れのない対応が可能になります。<br>
-        自分の役割と担当範囲を事前に把握しておいてください。
+      <h2 class="section-title"><span class="icon">🏛️</span>役員会を招集する条件</h2>
+      <p style="margin-bottom:32px; font-size:.94rem; color:var(--text-sub);">
+        以下のいずれかの状況が発生した場合、会長は速やかに役員会を招集します。<br>
+        会長が連絡できない場合は副会長が代行します。
       </p>
 
-      <div class="role-def-grid">
-        <div class="role-def-card" style="border-top:4px solid #1B3A5C;">
-          <div class="role-def-title">🏛️ 会長（町会長）</div>
-          <div class="role-def-sub">全体指揮・対外窓口</div>
-          <div class="role-def-desc">
-            全役員を統括し、市役所・消防署等との連絡窓口となる。<br>
-            対応方針の最終決定と情報発信の責任者。
+      <div class="confirm-grid" style="max-width:860px;">
+
+        <div class="confirm-card" style="border-top-color:#C62828;">
+          <div class="confirm-card-title">🔴 市から避難情報が発令されたとき</div>
+          <div class="confirm-card-body">
+            市が<strong>「高齢者等避難」（警戒レベル3）以上</strong>の避難情報を発令した場合。<br>
+            レベルが上がるほど対応の緊急度が増すため、招集は発令を確認してから速やかに行う。
           </div>
         </div>
 
-        <div class="role-def-card" style="border-top:4px solid #2A5280;">
-          <div class="role-def-title">🤝 副会長</div>
-          <div class="role-def-sub">会長補佐・避難所運営指揮</div>
-          <div class="role-def-desc">
-            会長を補佐し、避難所の受付・運営を指揮する。<br>
-            会長不在の場合は代行して全体を指揮する。
+        <div class="confirm-card" style="border-top-color:#C62828;">
+          <div class="confirm-card-title">🏚️ 大規模な災害が発生したとき</div>
+          <div class="confirm-card-body">
+            地震・火災・土砂崩れ・浸水等の<strong>大規模な災害が実際に発生した場合</strong>。<br>
+            警戒レベルの発令を待たず、被害が確認された時点で招集する。
           </div>
         </div>
 
-        <div class="role-def-card" style="border-top:4px solid #BF360C;">
-          <div class="role-def-title">🧯 防災担当役員</div>
-          <div class="role-def-sub">資機材管理・避難所開設</div>
-          <div class="role-def-desc">
-            防災資機材・備蓄品の管理と避難所開設を担当する。<br>
-            要援護者名簿の維持管理も担う。
+        <div class="confirm-card" style="border-top-color:#E65100;">
+          <div class="confirm-card-title">🆘 住民から複数の被害・救助要請があったとき</div>
+          <div class="confirm-card-body">
+            住民から<strong>家屋の被害・負傷者・孤立世帯などの報告が複数件寄せられた場合</strong>。<br>
+            組織として対応する必要があると判断された時点で招集する。
           </div>
         </div>
 
-        <div class="role-def-card" style="border-top:4px solid #2E7D32;">
-          <div class="role-def-title">🏘️ 班長</div>
-          <div class="role-def-sub">担当班の住民対応・安否確認</div>
-          <div class="role-def-desc">
-            担当班（10〜20世帯程度）の住民に直接連絡し、<br>
-            安否確認・避難支援・情報周知を行う最前線の役員。
+        <div class="confirm-card" style="border-top-color:#37474F;">
+          <div class="confirm-card-title">📋 会長が必要と判断したとき</div>
+          <div class="confirm-card-body">
+            上記3つに当てはまらない場合でも、<strong>会長が状況を総合的に判断して必要と認めた場合</strong>は招集する。<br>
+            迷ったら招集する。役員会を開くこと自体に害はない。
           </div>
         </div>
-      </div>
 
-      <div class="alert alert-info mt-24" style="max-width:720px;">
-        <span class="alert-icon">📋</span>
-        <div>
-          <strong>緊急時の連絡体制：</strong>
-          <div class="flow-row" style="margin-top:8px;">
-            <span>市・消防</span>
-            <span class="flow-arrow">⇔</span>
-            <span class="role-badge role-chief">会長</span>
-            <span class="flow-arrow">→</span>
-            <span class="role-badge role-vice">副会長</span>
-            <span class="flow-arrow">→</span>
-            <span class="role-badge role-bousai">防災担当</span>
-            <span class="flow-arrow">→</span>
-            <span class="role-badge role-hanchou">班長 × 各班</span>
-          </div>
-          役員全員が参加するLINEグループを事前に作成し、連絡先を共有しておいてください。
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- フェーズ一覧 -->
+  <!-- 役員会の招集手順・集合場所 -->
   <section class="section" style="background:#fff;">
     <div class="container">
-      <h2 class="section-title"><span class="icon">📅</span>フェーズ別 行動マニュアル</h2>
-      <p style="margin-bottom:8px; font-size:.94rem; color:var(--text-sub);">
-        各フェーズで誰が・いつ・どこで・何をするかを示しています。フェーズは警戒レベルの上昇に伴い移行します。
-      </p>
-      <p style="margin-bottom:36px; font-size:.82rem; color:var(--text-sub);">
-        ※ 警戒レベルを待たず状況が切迫した場合は、会長判断で上位フェーズの行動に移ってください。
-      </p>
+      <h2 class="section-title"><span class="icon">📣</span>招集の手順と集合場所</h2>
 
-      <!-- フェーズ0：平時の備え -->
-      <div class="officer-phase">
-        <div class="officer-phase-header ph-peacetime">
-          <div class="officer-phase-label">フェーズ 0</div>
-          <div class="officer-phase-title">🗂️ 平時の備え</div>
-          <div class="officer-phase-trigger">⏰ タイミング：日常的・年1回以上（防災訓練前後、役員改選時）</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; max-width:860px;">
+
+        <div>
+          <h3 style="font-size:1rem; font-weight:700; color:var(--primary); margin-bottom:16px;">招集の手順</h3>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <div class="step-title">会長がLINEグループで招集を通知する</div>
+                <p style="font-size:.85rem; color:var(--text-sub); margin-top:4px;">「役員会を招集します。場所：〇〇、集合：〇〇時」と明記して送信する。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <div class="step-title">LINEが繋がらない場合は直接電話する</div>
+                <p style="font-size:.85rem; color:var(--text-sub); margin-top:4px;">電話でも連絡が取れない役員は、副会長が追跡する。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <div class="step-title">全員が揃わなくても開始する</div>
+                <p style="font-size:.85rem; color:var(--text-sub); margin-top:4px;">欠席者には決定事項をLINEで共有する。参加できない役員も必ず現在地・状況を報告する。</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="officer-phase-body">
 
-          <div class="officer-card chief">
-            <span class="role-badge role-chief">会長</span>
-            <ul>
-              <li>役員会で防災体制・担当分担を確認・更新する</li>
-              <li>年1回以上の防災訓練を企画・実施する</li>
-              <li>市の防災担当・消防署と関係を維持する（窓口担当者の名刺交換など）</li>
-              <li>ホームページ・回覧板で住民向け防災情報を発信する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">どこで</span>町会会館・役員会・市役所</span>
+        <div>
+          <h3 style="font-size:1rem; font-weight:700; color:var(--primary); margin-bottom:16px;">集合場所の優先順位</h3>
+          <div class="news-list">
+            <div class="news-item">
+              <div class="news-date" style="min-width:3em; font-weight:700; color:var(--primary);">第1候補</div>
+              <div class="news-body">
+                <strong>町会会館</strong><br>
+                <span style="font-size:.82rem; color:var(--text-sub);">○○市△△区□□X-X-X　鍵：会長・副会長</span>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-date" style="min-width:3em; font-weight:700; color:var(--primary);">第2候補</div>
+              <div class="news-body">
+                <strong>○○小学校（指定避難所）</strong><br>
+                <span style="font-size:.82rem; color:var(--text-sub);">避難所開設時はここを対策本部とする　鍵：防災担当役員</span>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-date" style="min-width:3em; font-weight:700; color:var(--primary);">第3候補</div>
+              <div class="news-body">
+                <strong>△△公民館</strong><br>
+                <span style="font-size:.82rem; color:var(--text-sub);">第1・第2候補が使用不能の場合　鍵：役員名簿に記載</span>
+              </div>
             </div>
           </div>
-
-          <div class="officer-card vice">
-            <span class="role-badge role-vice">副会長</span>
-            <ul>
-              <li>役員LINEグループを整備し、全員が参加していることを確認する</li>
-              <li>会長不在時の代行手順を確認し、役員全員に周知する</li>
-              <li>緊急連絡網（全役員の携帯番号）を最新の状態に保つ</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">どこで</span>各自・役員会</span>
-            </div>
+          <div class="alert alert-warning" style="margin-top:16px;">
+            <span class="alert-icon">⚠️</span>
+            <div style="font-size:.85rem;">集合場所を変更した場合は<strong>LINEグループで即通知する。</strong>電話が不通の場合は第1候補の入口に「集合場所：〇〇」と紙を貼り残す。</div>
           </div>
-
-          <div class="officer-card bousai">
-            <span class="role-badge role-bousai">防災担当</span>
-            <ul>
-              <li>要援護者名簿（高齢者・障害者・乳幼児のいる世帯等）を年1回更新する</li>
-              <li>防災資機材（AED・発電機・担架・投光器等）の状態を半年ごとに点検する</li>
-              <li>備蓄品の数量・賞味期限を確認し、不足分を補充する</li>
-              <li>避難所開設に必要な鍵・受付用品の保管場所を確認する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">どこで</span>資機材保管場所・各要援護者宅（名簿確認時）</span>
-            </div>
-          </div>
-
-          <div class="officer-card hanchou">
-            <span class="role-badge role-hanchou">班長</span>
-            <ul>
-              <li>担当班の転入・転出を把握し、世帯リストを最新化する</li>
-              <li>要援護者・高齢者の独居世帯を日頃から把握し、顔の見える関係を作る</li>
-              <li>自班の安否確認担当範囲（何番地〜何番地）を明確に把握する</li>
-              <li>住民向け防災情報を回覧板などで周知する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">どこで</span>担当班エリア</span>
-            </div>
-          </div>
-
         </div>
+
       </div>
-
-      <!-- フェーズ1：警戒レベル1〜2 -->
-      <div class="officer-phase">
-        <div class="officer-phase-header ph-lv12">
-          <div class="officer-phase-label">フェーズ 1 ／ 警戒レベル 1〜2</div>
-          <div class="officer-phase-title">📡 情報収集・準備開始</div>
-          <div class="officer-phase-trigger">⏰ タイミング：気象庁が早期注意情報・注意報・警報を発表したとき</div>
-        </div>
-        <div class="officer-phase-body">
-
-          <div class="officer-card chief">
-            <span class="role-badge role-chief">会長</span>
-            <ul>
-              <li>気象庁・市の防災情報を収集し始める</li>
-              <li>役員LINEグループに「情報収集を開始した」と一報を入れる</li>
-              <li>状況次第でフェーズ2への移行を判断する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>注意報・警報発令直後</span>
-              <span><span class="meta-label">どこで</span>自宅・随時（スマートフォン可）</span>
-            </div>
-          </div>
-
-          <div class="officer-card vice">
-            <span class="role-badge role-vice">副会長</span>
-            <ul>
-              <li>役員全員への連絡が取れる状態かを確認する（既読確認等）</li>
-              <li>必要に応じてホームページのお知らせ欄に注意喚起を掲載する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>会長からの連絡を受けたら</span>
-              <span><span class="meta-label">どこで</span>自宅・随時</span>
-            </div>
-          </div>
-
-          <div class="officer-card bousai">
-            <span class="role-badge role-bousai">防災担当</span>
-            <ul>
-              <li>防災資機材の保管場所を確認し、すぐ持ち出せる状態か確認する</li>
-              <li>避難所開設に必要な鍵・受付用品の所在を再確認する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>会長からの連絡を受けたら</span>
-              <span><span class="meta-label">どこで</span>資機材保管場所</span>
-            </div>
-          </div>
-
-          <div class="officer-card hanchou">
-            <span class="role-badge role-hanchou">班長</span>
-            <ul>
-              <li>担当班の住民に「気象情報に注意するよう」連絡する（LINE・電話・回覧）</li>
-              <li>高齢者・要援護者宅に一声かけ、状況を確認しておく</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>副会長からの連絡を受けたら</span>
-              <span><span class="meta-label">どこで</span>担当班エリア・電話</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- フェーズ2：警戒レベル3 -->
-      <div class="officer-phase">
-        <div class="officer-phase-header ph-lv3">
-          <div class="officer-phase-label">フェーズ 2 ／ 警戒レベル 3</div>
-          <div class="officer-phase-title">🔴 高齢者等避難発令 — 要援護者対応・避難所準備</div>
-          <div class="officer-phase-trigger">⏰ タイミング：市が「高齢者等避難」を発令したとき（または会長が独自に判断したとき）</div>
-        </div>
-        <div class="officer-phase-body">
-
-          <div class="officer-card chief">
-            <span class="role-badge role-chief">会長</span>
-            <ul>
-              <li>市の防災担当に連絡し、避難所の開設見込みと開設場所を確認する</li>
-              <li>役員LINEグループで「フェーズ2」を宣言し、各役員に行動を指示する</li>
-              <li>ホームページ・回覧板で住民への避難呼びかけを発信する</li>
-              <li>状況変化を役員グループに随時共有する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発令直後・30分以内を目安に</span>
-              <span><span class="meta-label">どこで</span>自宅・電話（移動しながら可）</span>
-            </div>
-          </div>
-
-          <div class="officer-card vice">
-            <span class="role-badge role-vice">副会長</span>
-            <ul>
-              <li>防災担当と連携して避難所の開設準備を開始する</li>
-              <li>役員の出動可否を確認し、人員を調整する</li>
-              <li>班長からの報告を受け取り、会長に集約する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>会長指示後・速やかに</span>
-              <span><span class="meta-label">どこで</span>指定避難所（○○小学校等）へ向かう</span>
-            </div>
-          </div>
-
-          <div class="officer-card bousai">
-            <span class="role-badge role-bousai">防災担当</span>
-            <ul>
-              <li>避難所の鍵を持ち、施設担当者（学校・公民館等）と連絡を取り入館する</li>
-              <li>受付エリア・休憩スペースのレイアウトを設定する</li>
-              <li>受付名簿・筆記用具・物資を準備する</li>
-              <li>AED・救急セット等の資機材を配置する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発令後・1時間以内を目安に</span>
-              <span><span class="meta-label">どこで</span>指定避難所</span>
-            </div>
-          </div>
-
-          <div class="officer-card hanchou">
-            <span class="role-badge role-hanchou">班長</span>
-            <ul>
-              <li>要援護者名簿に基づき、担当する要援護者に電話・訪問して避難を促す</li>
-              <li>移動が困難な方には、近隣住民や家族と連携して付き添い避難を手配する</li>
-              <li>要援護者の避難完了または「自宅残留の意思確認」を記録し、副会長に報告する</li>
-              <li>その他の住民にも避難準備を呼びかける</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発令直後・優先して実施</span>
-              <span><span class="meta-label">どこで</span>担当班の要援護者宅・各戸</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- フェーズ3：警戒レベル4 -->
-      <div class="officer-phase">
-        <div class="officer-phase-header ph-lv4">
-          <div class="officer-phase-label">フェーズ 3 ／ 警戒レベル 4</div>
-          <div class="officer-phase-title">🟣 避難指示発令 — 全住民避難・避難所運営</div>
-          <div class="officer-phase-trigger">⏰ タイミング：市が「避難指示」を発令したとき（または会長が独自に判断したとき）</div>
-        </div>
-        <div class="officer-phase-body">
-
-          <div class="officer-card chief">
-            <span class="role-badge role-chief">会長</span>
-            <ul>
-              <li>全住民への緊急避難指示を、できる手段すべてで周知する（ホームページ緊急バナー・防災無線・電話）</li>
-              <li>市の災害対策本部へ連絡し、状況を報告・情報収集を継続する</li>
-              <li>安否不明者の情報を各班長から集約し、市へ速やかに報告する</li>
-              <li>役員の安全を確認し、欠員が出た場合の代行者を即座に指名する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発令直後・最優先で対応</span>
-              <span><span class="meta-label">どこで</span>町会会館 or 避難所（指揮拠点）</span>
-            </div>
-          </div>
-
-          <div class="officer-card vice">
-            <span class="role-badge role-vice">副会長</span>
-            <ul>
-              <li>避難所の受付運営を指揮する（来所者の名簿記入・誘導）</li>
-              <li>各班長からの安否確認報告を受け取り、集約して会長に渡す</li>
-              <li>避難所内の秩序維持と避難者のニーズ把握に努める</li>
-              <li>会長と定期的に状況共有を行う（30分ごと等）</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>避難所開設後・随時</span>
-              <span><span class="meta-label">どこで</span>指定避難所</span>
-            </div>
-          </div>
-
-          <div class="officer-card bousai">
-            <span class="role-badge role-bousai">防災担当</span>
-            <ul>
-              <li>避難者の受け入れ・誘導を行い、名簿に記録する</li>
-              <li>医療的ケアが必要な方・要配慮者を別スペースに案内する</li>
-              <li>備蓄物資の配布を管理する（配布ルール・数量を記録）</li>
-              <li>施設設備（トイレ・電気・空調）の状況を確認し、問題があれば施設担当者に連絡する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>避難所開設後・随時</span>
-              <span><span class="meta-label">どこで</span>指定避難所</span>
-            </div>
-          </div>
-
-          <div class="officer-card hanchou">
-            <span class="role-badge role-hanchou">班長</span>
-            <ul>
-              <li>担当班の全戸について「避難完了」または「自宅残留（理由）」を確認する</li>
-              <li>避難支援が必要な方を即座に副会長・防災担当に連絡する</li>
-              <li>確認が取れない世帯（不在・応答なし）の情報を副会長に報告する</li>
-              <li>全戸確認が完了したら「確認完了・異常なし（または要確認世帯数）」を副会長に報告する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発令直後・戸別確認を迅速に実施</span>
-              <span><span class="meta-label">どこで</span>担当班エリア全戸</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- フェーズ4：警戒レベル5・発災時 -->
-      <div class="officer-phase">
-        <div class="officer-phase-header ph-lv5">
-          <div class="officer-phase-label">フェーズ 4 ／ 警戒レベル 5 ・ 発災時</div>
-          <div class="officer-phase-title">⚫ 緊急安全確保 — 発災直後の対応</div>
-          <div class="officer-phase-trigger">⏰ タイミング：災害が切迫・発生したとき</div>
-        </div>
-        <div class="officer-phase-body">
-
-          <div class="officer-card all" style="grid-column: 1 / -1;">
-            <span class="role-badge role-all">全役員 共通</span>
-            <ul>
-              <li><strong>まず自分と家族の安全を最優先に確保する。</strong>役員だからといって無理な行動は厳禁。</li>
-              <li>安全が確認できたら、役員LINEグループに<strong>「〇〇です。無事です。現在〇〇にいます」</strong>と一報を入れる。</li>
-              <li>状況が不明でも、指示を待ちすぎず、自分がいる場所でできる安全確保行動を取る。</li>
-            </ul>
-          </div>
-
-          <div class="officer-card chief">
-            <span class="role-badge role-chief">会長</span>
-            <ul>
-              <li>安全確保後、市の災害対策本部に状況を連絡する</li>
-              <li>役員の安否状況を把握し、欠員が出た場合の代行体制を即座に決定する</li>
-              <li>住民の救助要請情報を収集し、消防・警察へ連絡する（119・110）</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>自分の安全確保後・直ちに</span>
-              <span><span class="meta-label">どこで</span>最寄りの安全な場所</span>
-            </div>
-          </div>
-
-          <div class="officer-card vice">
-            <span class="role-badge role-vice">副会長</span>
-            <ul>
-              <li>避難所が既に開設されていれば運営を継続・引き継ぐ</li>
-              <li>役員の安否報告を集約し、会長に伝える</li>
-              <li>避難所に要救助情報が届いた場合は会長に即報する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>自分の安全確保後</span>
-              <span><span class="meta-label">どこで</span>避難所 or 安全な場所</span>
-            </div>
-          </div>
-
-          <div class="officer-card bousai">
-            <span class="role-badge role-bousai">防災担当</span>
-            <ul>
-              <li>把握できた要救助者情報（家屋倒壊・閉じ込め等）を消防・警察へ連絡する</li>
-              <li>避難所の被災状況を確認し、使用継続の可否を施設担当者と判断する</li>
-              <li>資機材・備蓄品の現状を記録する（配布済み数量・残量）</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>自分の安全確保後</span>
-              <span><span class="meta-label">どこで</span>避難所 or 安全な場所</span>
-            </div>
-          </div>
-
-          <div class="officer-card hanchou">
-            <span class="role-badge role-hanchou">班長</span>
-            <ul>
-              <li>担当エリアの被害状況（家屋倒壊・道路閉塞・負傷者等）を、安全な範囲で確認する</li>
-              <li>救助が必要な方の情報（氏名・住所・状況）を副会長へ報告する</li>
-              <li>移動が危険な場合は無理をせず、現地で待機して安全な経路を確保してから行動する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>自分の安全確保後・状況が落ち着いたら</span>
-              <span><span class="meta-label">どこで</span>担当班エリア（安全な範囲で）</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- フェーズ5：発生後・復旧期 -->
-      <div class="officer-phase">
-        <div class="officer-phase-header ph-recovery">
-          <div class="officer-phase-label">フェーズ 5</div>
-          <div class="officer-phase-title">✅ 発生後・復旧期</div>
-          <div class="officer-phase-trigger">⏰ タイミング：災害が収束した後（数時間〜数週間）</div>
-        </div>
-        <div class="officer-phase-body">
-
-          <div class="officer-card chief">
-            <span class="role-badge role-chief">会長</span>
-            <ul>
-              <li>役員会を開いて全体の被害状況を集約し、今後の対応方針を決める</li>
-              <li>市へ被害状況を報告し、支援物資・罹災証明の窓口情報を住民に周知する</li>
-              <li>復旧・支援情報をホームページ・回覧板で随時発信する</li>
-              <li>今回の対応を振り返り、マニュアルの改善点をまとめる</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発生後・数時間〜数日以内に順次対応</span>
-              <span><span class="meta-label">どこで</span>町会会館・避難所</span>
-            </div>
-          </div>
-
-          <div class="officer-card vice">
-            <span class="role-badge role-vice">副会長</span>
-            <ul>
-              <li>各班長からの安否・被害状況報告を集約し、会長に提出する</li>
-              <li>支援物資の受け取り窓口を設置し、公平な配分を調整する</li>
-              <li>避難所の運営が長期化する場合はローテーション体制を整える</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発生後・数日間</span>
-              <span><span class="meta-label">どこで</span>避難所・物資配布拠点</span>
-            </div>
-          </div>
-
-          <div class="officer-card bousai">
-            <span class="role-badge role-bousai">防災担当</span>
-            <ul>
-              <li>使用した資機材・備蓄品を記録し、補充・修繕を会長に申請する</li>
-              <li>避難所で生じた衛生上の問題（トイレ・感染症予防等）に対処する</li>
-              <li>今回の教訓を次回の防災訓練・マニュアル改訂に反映するためメモを残す</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>復旧期・随時</span>
-              <span><span class="meta-label">どこで</span>資機材保管場所・避難所</span>
-            </div>
-          </div>
-
-          <div class="officer-card hanchou">
-            <span class="role-badge role-hanchou">班長</span>
-            <ul>
-              <li>担当班の全戸について安否・被害状況を戸別訪問で確認し、報告書にまとめる</li>
-              <li>住民からの相談・困りごとを集約し、副会長に伝えて行政への橋渡しを依頼する</li>
-              <li>独居高齢者・要援護者の状況を引き続き見守り、異変があれば即報告する</li>
-            </ul>
-            <div class="officer-card-meta">
-              <span><span class="meta-label">いつ</span>発生後・数日〜数週間</span>
-              <span><span class="meta-label">どこで</span>担当班エリア全戸</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- 緊急時チェックリスト -->
+  <!-- 安否確認フォームの配信条件 -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title"><span class="icon">✅</span>役員 緊急時チェックリスト</h2>
-      <p style="margin-bottom:24px; font-size:.94rem; color:var(--text-sub);">
-        警戒レベルが上がったとき、このリストで対応漏れがないか確認してください。
+      <h2 class="section-title"><span class="icon">📋</span>安否確認フォームの LINE 配信条件</h2>
+      <p style="margin-bottom:32px; font-size:.94rem; color:var(--text-sub);">
+        LINE公式アカウントを通じて町民に安否確認フォームを配信するタイミングの基準です。<br>
+        配信は<strong>役員会での合意を経て会長が決定</strong>します。独断では配信しないでください。
       </p>
 
-      <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap:24px;">
+      <div class="confirm-grid" style="max-width:860px;">
 
-        <div>
-          <div style="font-weight:700; color:var(--primary); margin-bottom:12px; font-size:.95rem;">📡 情報収集・連絡体制</div>
-          <div class="checklist">
-            <div class="checklist-item">気象情報・警戒レベルをリアルタイムで確認している</div>
-            <div class="checklist-item">役員LINEグループで情報共有できている</div>
-            <div class="checklist-item">市の防災担当窓口と連絡が取れている（会長）</div>
-            <div class="checklist-item">役員全員の安否が確認できている（副会長）</div>
+        <div class="confirm-card" style="border-top-color:#4A148C;">
+          <div class="confirm-card-title">🟣 市から避難指示（レベル4）以上が発令されたとき</div>
+          <div class="confirm-card-body">
+            多数の住民が避難行動を取っている可能性があり、町会として安否状況を把握する必要がある場合。<br>
+            役員会で配信を決定し、速やかに送信する。
           </div>
         </div>
 
-        <div>
-          <div style="font-weight:700; color:var(--primary); margin-bottom:12px; font-size:.95rem;">🏫 避難所関連</div>
-          <div class="checklist">
-            <div class="checklist-item">避難所の開設準備が完了している（防災担当）</div>
-            <div class="checklist-item">避難者名簿の記録が始まっている（防災担当）</div>
-            <div class="checklist-item">要配慮者（高齢者・障害者等）の居場所を把握している</div>
-            <div class="checklist-item">物資の配布ルールが決まっている（副会長）</div>
+        <div class="confirm-card" style="border-top-color:#4A148C;">
+          <div class="confirm-card-title">🏚️ 大規模な地震・災害が発生し、住民の安否が不明なとき</div>
+          <div class="confirm-card-body">
+            避難情報の発令にかかわらず、<strong>建物被害・断線・孤立等により住民の状況が把握できない</strong>と判断した場合。<br>
+            役員会で配信を決定する。
           </div>
         </div>
 
-        <div>
-          <div style="font-weight:700; color:var(--primary); margin-bottom:12px; font-size:.95rem;">🏘️ 住民対応</div>
-          <div class="checklist">
-            <div class="checklist-item">要援護者への安否確認・避難支援が完了している（班長）</div>
-            <div class="checklist-item">担当班全戸の安否状況を把握・報告している（班長）</div>
-            <div class="checklist-item">住民への最新情報の発信ができている（会長・副会長）</div>
-            <div class="checklist-item">救助が必要な人の情報を消防・警察へ伝えた（会長）</div>
+        <div class="confirm-card" style="border-top-color:#37474F;">
+          <div class="confirm-card-title">📋 役員会で配信が必要と判断したとき</div>
+          <div class="confirm-card-body">
+            上記2つに当てはまらない場合でも、役員会での協議の結果として配信が必要と判断された場合。
           </div>
         </div>
 
+      </div>
+
+      <div class="alert alert-info mt-16" style="max-width:860px;">
+        <span class="alert-icon">ℹ️</span>
+        <div>
+          <strong>配信後の対応：</strong>フォームの回答は役員会で集約し、安否不明の世帯を特定します。確認が取れない世帯については班長が戸別訪問で確認します。回答結果は市の防災担当窓口にも報告してください。
+        </div>
       </div>
     </div>
   </section>
@@ -568,17 +206,17 @@
         <div class="contact-card">
           <div class="contact-name">会長</div>
           <div class="contact-tel"><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a></div>
-          <div class="contact-note">全体指揮・対外連絡</div>
+          <div class="contact-note">役員会招集・配信決定の責任者</div>
         </div>
         <div class="contact-card">
           <div class="contact-name">副会長</div>
           <div class="contact-tel"><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a></div>
-          <div class="contact-note">避難所運営・会長代行</div>
+          <div class="contact-note">会長不在時の招集代行</div>
         </div>
         <div class="contact-card">
           <div class="contact-name">防災担当役員</div>
           <div class="contact-tel"><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a></div>
-          <div class="contact-note">資機材・避難所開設</div>
+          <div class="contact-note">集合場所の鍵・資機材担当</div>
         </div>
         <div class="contact-card">
           <div class="contact-name">○○市 危機管理課</div>
@@ -586,7 +224,7 @@
           <div class="contact-note">平日 8:30〜17:15</div>
         </div>
         <div class="contact-card">
-          <div class="contact-name">○○市 夜間・休日</div>
+          <div class="contact-name">○○市 夜間・休日窓口</div>
           <div class="contact-tel"><a href="tel:0X0XXXXXXXX">0X0-XXXX-XXXX</a></div>
           <div class="contact-note">夜間・土日祝</div>
         </div>
@@ -594,14 +232,6 @@
           <div class="contact-name">消防・救急（緊急）</div>
           <div class="contact-tel"><a href="tel:119">119</a></div>
           <div class="contact-note">火災・救急・救助</div>
-        </div>
-      </div>
-
-      <div class="alert alert-warning mt-24" style="max-width:720px;">
-        <span class="alert-icon">📋</span>
-        <div>
-          <strong>班長の連絡先は役員名簿を参照してください。</strong>
-          役員名簿は防災担当役員が管理しています。年度替わりに必ず最新版に更新してください。
         </div>
       </div>
     </div>
